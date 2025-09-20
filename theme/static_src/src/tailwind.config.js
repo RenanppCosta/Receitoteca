@@ -4,7 +4,9 @@
 module.exports = {
   content: [
       // Adicione os caminhos para todos os seus arquivos de template
-      '../../**/templates/**/*.html',
+      './templates/**/*.html',
+      './**/templates/**/*.html',
+      './theme/templates/**/*.html',
   ],
   theme: {
     extend: {},

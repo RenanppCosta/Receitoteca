@@ -14,6 +14,22 @@
     </div>
 </header>
 
-<nav class="w-full flex justify-center">
-    <img src="{% static '/assets/logo/logo.png'%}" alt="Logo Receitoteca" style="width: 255px;">
+<nav class="w-full flex justify-center items-center flex-col">
+    <img src="{% static '/assets/logo/logo.png'%}" alt="Logo Receitoteca" style="width: 255px;" class="gap-y-2">
+    <ul class="flex gap-12">
+        <li class="font-medium cursor-pointer">Home</li>
+        <li class="font-medium cursor-pointer">Mais Vistas</li>
+        <li class="font-medium group relative cursor-pointer">
+            Categorias
+            <i class="fa-solid fa-chevron-down fa-xs" style="color: #000000;"></i>
+            <div class="absolute z-10 hidden bg-white rounded-lg shadow-lg w-48 group-hover:block">
+                <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Bolos e Tortas</a>
+                <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Carnes</a>
+                <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Saladas</a>
+                <a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Sobremesas</a>
+            </div>
+
+        </li>
+        <li class="font-medium cursor-pointer">Últimas Receitas</li>
+    </ul>
 </nav>

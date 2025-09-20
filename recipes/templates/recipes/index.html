@@ -1,5 +1,12 @@
 {% extends 'base.html' %}
+{% load static %}
 {% block title %}Pagina Inicial{% endblock %}
 {% block content %}
-	<h1>Pagina Inicial Testando</h1>
+	<div class="w-full aspect-[16/9] mt-16 lg:h-[644px]">
+		<img 
+			src="{% static 'assets/imgs/hero-home.png' %}" 
+			alt="Imagem Sobre o site Receitoteca"
+			class="w-full h-full object-cover"
+		>
+	</div>
 {% endblock %}
